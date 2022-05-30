@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Examen_Salinas_Tenelema">
         <activity
-            android:name=".MainActivity"
+            android:name=".Activity2_SJTM"
+            android:exported="false" />
+        <activity
+            android:name=".Activity1_SJTM"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
