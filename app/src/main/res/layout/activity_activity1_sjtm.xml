@@ -7,7 +7,7 @@
     tools:context=".Activity1_SJTM">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtView1_SJTM"
         android:layout_width="152dp"
         android:layout_height="68dp"
         android:text="Visualizacion del vector ORDENADO usando los indíces"
@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.054" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtView2_SJTM"
         android:layout_width="108dp"
         android:layout_height="33dp"
         android:layout_marginStart="123dp"
@@ -32,7 +32,7 @@
         app:layout_constraintVertical_bias="0.108" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txtView3_SJTM"
         android:layout_width="118dp"
         android:layout_height="35dp"
         android:text="Vector Original"
@@ -44,7 +44,7 @@
         app:layout_constraintVertical_bias="0.101" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnOrdenar_SJTM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ORDENAR"
@@ -56,7 +56,7 @@
         app:layout_constraintVertical_bias="0.781" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnMostrar_SJTM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MOSTRAR"
@@ -68,7 +68,7 @@
         app:layout_constraintVertical_bias="0.852" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnActivity_SJTM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SEGUNDO ACTIVITY"
@@ -78,5 +78,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.781" />
+
+    <ListView
+        android:id="@+id/ListVectorOrdenado_SJTM"
+        android:layout_width="114dp"
+        android:layout_height="287dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326" />
+
+    <ListView
+        android:id="@+id/ListVectorIndices_SJTM"
+        android:layout_width="113dp"
+        android:layout_height="287dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.331" />
+
+    <ListView
+        android:id="@+id/ListVectorOriginal_SJTM"
+        android:layout_width="111dp"
+        android:layout_height="282dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
