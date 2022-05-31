@@ -52,6 +52,7 @@
         android:id="@+id/btnCerrar_SJTM"
         android:layout_width="206dp"
         android:layout_height="67dp"
+        android:onClick="Cerrar_SJTM"
         android:text="CERRAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,19 +60,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.18" />
-
-    <ListView
-        android:id="@+id/listIngreso_SJTM"
-        android:layout_width="449dp"
-        android:layout_height="945dp"
-        android:onClick="Cerrar_SJTM"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.22"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="TouchTargetSizeCheck" />
 
     <ScrollView
         android:id="@+id/scroll_SJTM"
@@ -84,5 +72,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <LinearLayout
+        android:layout_width="458dp"
+        android:layout_height="942dp"
+        android:background="#8FCFCA"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ListView
+            android:id="@+id/listIngreso_SJTM"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
