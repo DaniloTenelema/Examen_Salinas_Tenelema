@@ -2,7 +2,9 @@ package com.example.examen_salinas_tenelema;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -26,5 +28,9 @@ public class Activity1_SJTM extends AppCompatActivity {
         ListVectorOrdenado_SJTM = findViewById(R.id.ListVectorOrdenado_SJTM);
         ListVectorIndices_SJTM = findViewById(R.id.ListVectorIndices_SJTM);
         ListVectorOriginal_SJTM = findViewById(R.id.ListVectorOriginal_SJTM);
+    }
+    public void Cerrar(View view){
+        Intent siguienteActivity = new Intent(this, Activity2_SJTM.class );
+        startActivity(siguienteActivity);
     }
 }
