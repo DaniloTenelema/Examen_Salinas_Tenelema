@@ -98,7 +98,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.331" />
+        app:layout_constraintVertical_bias="0.331" >
+
+        <ScrollView
+            android:id="@+id/scroll_SJTM"
+            android:layout_width="408dp"
+            android:layout_height="735dp"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+    </ListView>
 
     <ListView
         android:id="@+id/ListVectorOriginal_SJTM"
@@ -110,18 +123,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.322" />
-
-    <ScrollView
-        android:id="@+id/scroll_SJTM"
-        android:layout_width="408dp"
-        android:layout_height="735dp"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="1dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
