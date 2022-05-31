@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Activity2_SJTM extends AppCompatActivity {
 
@@ -17,7 +18,7 @@ public class Activity2_SJTM extends AppCompatActivity {
     private Button btnIngresar_SJTM;
     private  Button btnCerrar_SJTM;
     private ListView listIngreso_SJTM;
-    private ArrayList<String> Vector_SJTM;
+    private List<Vector> Vector_SJTM;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +29,7 @@ public class Activity2_SJTM extends AppCompatActivity {
         btnIngresar_SJTM = findViewById(R.id.btnIngresar_SJTM);
         btnCerrar_SJTM = findViewById(R.id.btnCerrar_SJTM);
         listIngreso_SJTM = findViewById(R.id.listIngreso_SJTM);
-        Vector_SJTM = new ArrayList<String>()
+        Vector_SJTM = new ArrayList<String>();
         String numero = getIntent().getStringExtra("numero");
         editNumber_SJTM.setText(numero);
 
