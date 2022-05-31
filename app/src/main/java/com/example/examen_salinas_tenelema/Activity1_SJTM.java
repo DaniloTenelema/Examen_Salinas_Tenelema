@@ -29,8 +29,15 @@ public class Activity1_SJTM extends AppCompatActivity {
         ListVectorIndices_SJTM = findViewById(R.id.ListVectorIndices_SJTM);
         ListVectorOriginal_SJTM = findViewById(R.id.ListVectorOriginal_SJTM);
     }
-    public void Siguiente(View view){
-        Intent siguienteActivity = new Intent(this, Activity2_SJTM.class );
-        startActivity(siguienteActivity);
+    public  void  Siguiente_SJTM(View view){
+        Intent siguiente_SJTM = new Intent(this, Activity2_SJTM.class);
+        startActivity(siguiente_SJTM);
+    }
+
+    public void Cerrar(View view){
+        Intent siguiente = new Intent(this, Activity2_SJTM.class );
+
+        startActivity(siguiente);
+
     }
 }
