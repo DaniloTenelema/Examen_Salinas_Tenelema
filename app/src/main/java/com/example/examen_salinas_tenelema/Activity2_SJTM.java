@@ -29,7 +29,7 @@ public class Activity2_SJTM extends AppCompatActivity {
 
 
     }
-    public void Cerrar(View view){
+    public void CerrarActivity2(View view){
         Intent siguiente = new Intent(this, Activity1_SJTM.class );
         startActivity(siguiente);
     }

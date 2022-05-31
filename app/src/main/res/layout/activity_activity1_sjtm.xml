@@ -71,7 +71,7 @@
         android:id="@+id/btnActivity_SJTM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="Cerrar"
+        android:onClick="Siguiente"
         android:text="SEGUNDO ACTIVITY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
