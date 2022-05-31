@@ -40,6 +40,7 @@
         android:id="@+id/btnIngresar_SJTM"
         android:layout_width="206dp"
         android:layout_height="67dp"
+        android:onClick="Ingresar_SJTM"
         android:text="INGRESAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
