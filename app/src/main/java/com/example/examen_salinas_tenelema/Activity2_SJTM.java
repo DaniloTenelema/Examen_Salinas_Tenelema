@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -18,7 +20,7 @@ public class Activity2_SJTM extends AppCompatActivity {
     private Button btnIngresar_SJTM;
     private  Button btnCerrar_SJTM;
     private ListView listIngreso_SJTM;
-    private List<Vector> Vector_SJTM;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +31,28 @@ public class Activity2_SJTM extends AppCompatActivity {
         btnIngresar_SJTM = findViewById(R.id.btnIngresar_SJTM);
         btnCerrar_SJTM = findViewById(R.id.btnCerrar_SJTM);
         listIngreso_SJTM = findViewById(R.id.listIngreso_SJTM);
-        Vector_SJTM = new ArrayList<String>();
-        String numero = getIntent().getStringExtra("numero");
-        editNumber_SJTM.setText(numero);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, cargarDatos());
+        listIngreso_SJTM.setAdapter(adapter);
+        listIngreso_SJTM.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String valor =  listIngreso_SJTM.getAdapter().getItem(position).toString();
+                // Toast.makeText(getApplicationContext(), valor, Toast.LENGTH_LONG).show();
 
+
+            }
+        });
+
+
+    }
+
+    private List<String> cargarDatos(){
+        List<String> lista = new ArrayList<>();
+        for (int i=0; i<=30; i++){
+            String item = "Numero"+i;
+            lista.add(item);
+        }
+        return lista;
     }
 
     public  void Ingresar_SJTM(View view){
