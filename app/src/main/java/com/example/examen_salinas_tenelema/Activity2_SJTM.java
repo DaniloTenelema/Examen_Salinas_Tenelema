@@ -29,7 +29,7 @@ public class Activity2_SJTM extends AppCompatActivity {
         btnIngresar_SJTM = findViewById(R.id.btnIngresar_SJTM);
         btnCerrar_SJTM = findViewById(R.id.btnCerrar_SJTM);
         listIngreso_SJTM = findViewById(R.id.listIngreso_SJTM);
-        Vector_SJTM = new ArrayList<String>();
+
         String numero = getIntent().getStringExtra("numero");
         editNumber_SJTM.setText(numero);
 
@@ -45,8 +45,6 @@ public class Activity2_SJTM extends AppCompatActivity {
         Intent activity1_SJTM = new Intent(this, Activity1_SJTM.class );
         startActivity(activity1_SJTM);
     }
-
-
 
 
 

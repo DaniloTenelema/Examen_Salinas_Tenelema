@@ -36,7 +36,4 @@ public class Activity1_SJTM extends AppCompatActivity {
 
     }
 
-    public void ingresarNumero_SJTM(){
-
-    }
 }

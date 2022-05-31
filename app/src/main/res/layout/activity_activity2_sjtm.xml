@@ -75,7 +75,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ListView
-        android:id="@+id/list_SJTM"
+        android:id="@+id/listIngreso_SJTM"
         android:layout_width="456dp"
         android:layout_height="940dp"
         app:layout_constraintBottom_toBottomOf="parent"
