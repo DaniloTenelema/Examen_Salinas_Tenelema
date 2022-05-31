@@ -64,7 +64,7 @@
         android:id="@+id/listIngreso_SJTM"
         android:layout_width="449dp"
         android:layout_height="945dp"
-        android:onClick="Cerrar"
+        android:onClick="Cerrar_SJTM"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.22"
