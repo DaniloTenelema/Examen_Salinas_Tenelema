@@ -33,4 +33,11 @@ public class Activity1_SJTM extends AppCompatActivity {
         Intent siguiente_SJTM = new Intent(this, Activity2_SJTM.class);
         startActivity(siguiente_SJTM);
     }
+
+    public void Cerrar(View view){
+        Intent siguiente = new Intent(this, Activity2_SJTM.class );
+
+        startActivity(siguiente);
+
+    }
 }
