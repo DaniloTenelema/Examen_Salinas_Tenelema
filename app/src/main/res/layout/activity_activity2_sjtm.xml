@@ -8,79 +8,50 @@
 
     <TextView
         android:id="@+id/txtViewIngreso_SJTM"
-        android:layout_width="162dp"
-        android:layout_height="45dp"
+        android:layout_width="396dp"
+        android:layout_height="67dp"
         android:gravity="center"
         android:text="Ingresar un número:"
         android:textColor="#070707"
-        android:textSize="16sp"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.01"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029" />
+        app:layout_constraintVertical_bias="0.016" />
 
     <EditText
         android:id="@+id/editNumber_SJTM"
-        android:layout_width="88dp"
-        android:layout_height="45dp"
+        android:layout_width="120dp"
+        android:layout_height="67dp"
         android:ems="10"
         android:gravity="center"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.617"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029"
+        app:layout_constraintVertical_bias="0.016"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
-    <ListView
-        android:id="@+id/listIngreso_SJTM"
-        android:layout_width="235dp"
-        android:layout_height="664dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.089"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.985" />
 
     <Button
         android:id="@+id/btnIngresar_SJTM"
-        android:layout_width="139dp"
-        android:layout_height="51dp"
+        android:layout_width="206dp"
+        android:layout_height="67dp"
         android:text="INGRESAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintHorizontal_bias="0.971"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029" />
-
-    <HorizontalScrollView
-        android:id="@+id/scroll_SJTM"
-        android:layout_width="14dp"
-        android:layout_height="664dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.97"
-        tools:ignore="SpeakableTextPresentCheck">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical" />
-    </HorizontalScrollView>
+        app:layout_constraintVertical_bias="0.016" />
 
     <Button
         android:id="@+id/btnCerrar_SJTM"
-        android:layout_width="139dp"
-        android:layout_height="51dp"
+        android:layout_width="206dp"
+        android:layout_height="67dp"
         android:text="CERRAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -89,16 +60,28 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.18" />
 
-    <ScrollView
-        android:layout_width="158dp"
-        android:layout_height="556dp"
-        tools:layout_editor_absoluteX="252dp"
-        tools:layout_editor_absoluteY="174dp">
+    <ListView
+        android:id="@+id/listIngreso_SJTM"
+        android:layout_width="449dp"
+        android:layout_height="945dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TouchTargetSizeCheck" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+    <ScrollView
+        android:id="@+id/scroll_SJTM"
+        android:layout_width="59dp"
+        android:layout_height="945dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
