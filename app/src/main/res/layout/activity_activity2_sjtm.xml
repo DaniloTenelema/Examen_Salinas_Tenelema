@@ -73,23 +73,15 @@
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <LinearLayout
-        android:layout_width="458dp"
-        android:layout_height="942dp"
-        android:background="#8FCFCA"
-        android:orientation="vertical"
+    <ListView
+        android:id="@+id/list_SJTM"
+        android:layout_width="456dp"
+        android:layout_height="940dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintHorizontal_bias="0.201"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
-
-        <ListView
-            android:id="@+id/listIngreso_SJTM"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:ignore="TouchTargetSizeCheck" />
-    </LinearLayout>
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
