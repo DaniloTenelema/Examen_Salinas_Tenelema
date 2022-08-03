@@ -57,6 +57,7 @@ public class Activity2_SJTM extends AppCompatActivity {
 
     public  void Ingresar_SJTM(View view){
 
+
         String numero = getIntent().getStringExtra("numero");
         editNumber_SJTM.setText(numero);
     }
